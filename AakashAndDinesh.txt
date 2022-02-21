@@ -1,0 +1,628 @@
+
+
+	Application Development
+	
+		for themself -> Product
+		
+		to a client
+		
+			Services
+			
+				Accenture, CTS, TCS
+				
+				
+				
+	Application development
+	
+		Web Application
+		
+			Presentation
+			
+				Web application technologies
+				
+					MEAN - WEB Framework to develop web application
+					
+						MongoDB -> Database
+						
+						EXPRESS -> serve the data from Database
+						
+						ANGULAR -> Application which create UI for u
+						
+							HTML, CSS and Javascript
+						
+						NODE -> Platform running ur application
+	
+	Setup
+	
+		VS code application
+		Chrome browser		
+		Internet
+		
+	
+	
+	Front END
+	
+	
+		Web Application => Final => Browser
+		
+		
+			Browser => HTML, CSS and JS
+			
+	Front end development Core languages
+	
+		HTML, CSS and JS => Angular, ReactJS, VueJS (Frameworks)
+		
+	Chrome Browser is an Application 
+	
+		=> Browser Engine 
+		
+	
+	
+	HTML
+	
+		MS Word => electoric Document => file
+		
+		HTML => Web electoric document => web Page
+		
+		HyperText Markup Language
+		
+		
+			create one file with extension .html
+			
+			
+			Basics:
+			
+				tag based 
+				
+				<a> Data  </a> => equalent UI view
+				
+				<p>  Data </p> => Equalent UI 
+			
+		
+			Basic Structure of HTML
+			
+				index.html
+			
+				<html>				
+					<head>
+						<title> First Page </title>
+					</head>					
+					<body>
+						Whatever u write here
+						
+						<p> this is my first page </p>
+					</body>				
+				</html>
+		
+		
+		Basics of HTML tag
+		
+			1. Every tag has open and end tag
+			
+				ex: <h1 > </h1>
+				
+			2. Tag attribute
+			
+				Only On start tag
+			
+				<h1 id="firstH1" > </h1>
+				
+				<h1 id="firstH2" > This is my firsy </h1>
+				
+				<h1 id="firstH3" > </h1>
+				
+				<h1 id="firstH4" > </h1>
+				
+				id, name, style, class, 
+			3. Not case sensitive
+			
+				<H1> </H1> 
+				<h1> </h1>
+				
+			4. Some HTML tags are Exception
+			
+				<some-tag  />
+				
+				<br />
+				
+		
+		
+	Text Editing 
+	Presentation Tag
+	
+		Heading tags
+		
+			<h1> </h1>
+			
+			<h2> sfasasfdafdaafasdsdfd </h2>
+			
+			<h3> </h3>
+			.
+			.
+			.
+			
+			<h6> </h6>
+			
+		Paragraph
+		
+			<p> </p>
+			
+		List tags
+			
+			Unordered List 
+			
+				List Item
+			
+			<ul>
+				<li> Indian Cricketer </li>
+				
+				<li> CSK Player </li>
+			
+			</ul>
+			
+			Ordered List
+			
+			<ol>
+				<li> ICC T20 </li>
+				<li> ICC champions Trophy </li>
+				<li> ICC 50 over </li>
+			</ol>
+			
+		Table tag			
+		
+			<table border="1">
+				<tr> 
+					<td> Name </td>
+					<td> Id </td>
+					<td> class </td>
+					<td> section </td>
+				</tr>
+				<tr> 
+					<td> Name </td>
+					<td> Id </td>
+					<td> class </td>
+					<td> section </td>
+				</tr>
+				<tr> 
+					<td> Name </td>
+					<td> Id </td>
+					<td> class </td>
+					<td> section </td>
+				</tr>
+				<tr> 
+					<td> Name </td>
+					<td> Id </td>
+					<td> class </td>
+					<td> section </td>
+				</tr>
+			
+			</table>
+			
+	Interaction to our page
+	
+		Anchor Tag
+		
+			<a> Display Text </a>
+			
+			Allow you to go another page (HTML)
+			
+			<a href="about.html"> Display Text </a>
+			
+			
+			<a href="https://www.google.com/" > Go TO Google </a>
+			
+			
+			<a href="https://www.google.com/" target="_blank" > Go TO Google </a>
+			
+			
+			<form>
+			
+			</form>
+			
+			<some-tag>
+			
+			Input tags
+			
+			<input /> equalent to <input type="text" /> , by default type is text
+			
+			<form>
+				<input type="text" />
+				
+				<input type="number" />
+				
+				<input type="email" />
+				
+				<input type="password" />
+				
+				<input type="checkbox" />
+				<input type="radio" />
+				
+				<select> <option> </option> </select>
+				
+				<button type="button"> submit </submit>
+				<button type="submit"> submit </submit>
+				
+			</form>
+				
+				
+			</some-tag>
+			
+		
+			
+			
+				
+			
+			
+				HTML  -> Presentaion -> input 
+				CSS	-> styling -> alignemnt, colorings
+				JS -> Processing ur input
+		
+		
+			<b> </b>
+			
+			<strong> </strong>
+		
+		
+	
+		grouping tags -> Optional
+		
+			section -> large category
+			
+			div -> small and tiny	
+			
+	
+	
+		
+		Formatting our HTML
+		
+			Styling our page
+			
+		HTML, CSS, JS
+		
+		CSS
+			Cascading Style sheet
+			
+			
+		All your default view of HTML is based on default configuration of browser CSS
+			for h1, there will be some default CSS will be configured
+			
+			
+			
+		
+		How to add custom styling to our page
+		
+			1. Inline Style
+			
+				
+				<h2>This is my First Page</h2> // default view
+				
+				
+				<h2 style="color: red;" >This is my First Page</h2>
+			
+			2. Internal Style
+			
+					 using style tag <style> </style>
+					 <head>
+						<title> Tab Name </title>
+						
+						<style> 	// Internal styling		
+										
+							h2 {
+								font-family: 'Comforter', cursive;
+								font-size; 24px;
+								text-align: center;
+								text-transform: capitalize;
+							}					
+						
+						</style>
+					
+					</head>
+					
+			
+			3. External Style
+			
+	
+		
+		Styling syntax:
+		
+			key: value; key1: value1;
+			
+			
+			color: red;
+			
+	
+		Text styling
+		
+			Text color
+			
+			 key = color
+			 
+			 value = red, blue, green, 
+			 
+				named colors = red, green, blue, yellow, 
+				
+				creating color:
+				
+					RED, GREEN  and BLUE => Primary colors
+					
+					100, 100 and 100
+					100, 100 and 100
+					
+					10 + 10 + 10 => new colorings
+					100 + 100 + 100 => white
+					0 + 0 + 0 => black
+								   0 ---------------------------100;
+						   #RGB -> 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f;
+					color: #000;
+					
+					color: #b3089a;
+					
+					color: #00ddff;
+					
+					color: #3daf24;
+					
+					color: #ff0000; -> Red
+					color: #00ff00;  -> Green
+					color: #0000ff; -> blue
+			
+			background color:
+			
+				key = background-color: red, gree, #aa00ff;
+				
+				
+			Text alignement
+			
+				key = text-align
+				
+				text-align: left | right  | center | justify
+				
+			Text case:
+			
+				uppercase, lowercase, capitalize
+				
+				key = text-transform
+				
+				text-transform: uppercase  | lowercase
+				
+				
+			Font size
+			
+				key = font-size
+				
+				font-size: 16px
+					
+					
+					
+		Font style
+		
+			key = font-family
+			
+			font-family: 'arial';
+				
+				
+			font-family: 'Comforter', cursive;
+			
+	
+	
+	what to learn in css
+	
+	
+		1. keys and values for ur change
+		
+		2. how we are appying style
+			
+			CSS selector
+			
+				How to select an element and apply style 
+						
+				
+				
+			1. Element selector
+			
+				h2 {
+					font-family: 'Comforter', cursive;
+					font-size; 24px;
+					text-align: center;
+					text-transform: capitalize;
+				}				
+				all h2 elements in our page will receive this style
+				
+			2. Attribute Selector
+			
+				h2[id="someValue"] {
+				
+				}
+			3. class selector			
+				
+				.my-class {
+					font-family: 'Comforter', cursive;
+					font-size; 24px;
+					text-align: center;
+					text-transform: capitalize;
+				}
+				
+				
+				
+			style will be merged
+			
+			
+				style>
+				
+				
+					h2 {
+						 color: #7e2d2d;
+					}
+				
+				
+				
+					h2 {
+						font-size: 16px;
+					}
+					
+					
+					h2 {
+						color: #232343;
+						font-size: 16px;
+					}
+				
+				
+		
+		Element Box
+		
+		
+			for every element there is box 
+			
+			
+			Content
+			
+			
+				whatever value we give in the element
+				
+					<h2> This is my content </h2>
+					
+					
+				Border ( Ellai kodu)
+				
+					a line around ur element
+					
+					by default border will be 0
+					
+					css
+					
+						border: 2px solid #000;
+						
+								line height,  what type of line , what is the color of line
+								
+				Padding 
+				
+					Distance between border and content
+					
+					padding: 10px;
+					
+				Margin
+				
+				 margin: 10px;
+				 
+				 
+				margin: 10px; padding: 10px;
+				
+				top, bottom, right, left 
+				
+				margin-top: 10px;
+				margin-bottom: 10px;
+				
+				padding-top: 10px;
+				
+				
+				Mouse Icon
+				
+					cursor: pointer;
+					
+				box shadow
+				
+					box-shadow: 10px 10px 10px 10px;
+					
+								horizontal  vertical sharp spread;
+					
+					
+			
+				.my-class:focus {
+					border:
+				}
+				
+				Mouser hover
+				
+					#id:hover {
+						style
+					}
+								
+					
+					
+					
+		2 type
+			
+			h2 -> 
+			
+		Block elements
+			
+			it will take entire width
+			
+			Height: based on content
+			
+			h1. h6, p, div,
+			
+			always starts new line 
+			
+			dominate
+			
+		Inline-elements
+		
+			only takes width of ur content
+							
+	
+	
+		<p> </p>
+		
+		<p> </p>
+		
+		<a> 
+		
+		
+		
+		<a>
+		
+		
+		
+		<a> content
+		
+		<p>
+		
+					
+				display: block;
+		<p> </p>
+		
+		<p> </p>	
+
+		Flex
+		
+			display: flex;
+			
+			<p> First </p>
+		
+		<p> Second </p>
+		
+		
+		First Second
+		
+		Aakashrocksmsd@gmail.com
+		
+		dineshpalani2001@gmail.com
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+					
+			
+				
+				
+				
+					
+	
+		
+	
+					
+		
+			
+			
+	
+		

@@ -1,0 +1,234 @@
+<html>
+  <head>
+    <title>First Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comforter&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      h1,
+      h2,
+      h3 {
+        font-family: "Comforter", cursive;
+        font-size: 16px;
+        color: #eaeaea;
+      }
+
+      h2[id="firstH2"] {
+        color: #8dd7bf;
+      }
+
+      #myH6 {
+        color: aquamarine;
+      }
+
+      h2[name="secondH2Name"] {
+        color: #aeaeae;
+      }
+
+      .my-class {
+        font-family: "Comforter", cursive;
+        font-size: 24px;
+        text-align: center;
+        text-transform: capitalize;
+      }
+
+      #listTags {
+        border: 2px solid #000;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      #msd {
+        border: 2px solid green;
+        padding: 20px;
+      }
+
+      .my-text-box {
+        border: 1px solid #9b9b9b;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        width: 250px;
+        outline: none;
+      }
+
+      .my-text-box:focus {
+        border: 1px solid #1877f2;
+      }
+
+      .my-fb-login-button {
+        color: #1877f2;
+        background-color: white;
+        border: 1px solid #1877f2;
+        padding: 10px;
+        width: 250px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        cursor: pointer;
+      }
+
+      .my-fb-login-button:hover {
+        color: white;
+        background-color: #1877f2;
+      }
+
+      #fbForm {
+        width: 250px;
+        padding: 20px;
+        border-radius: 5px;
+        margin: 20px;
+        box-shadow: 0px 3px 17px 0px #bdbdbd;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section id="presentationTags">
+      <div id="headingTags">
+        <h1 style="text-align: center; text-transform: capitalize">
+          This is my First Page
+        </h1>
+
+        <h2 id="firstH2">This is my First Page</h2>
+
+        <h2 name="secondH2Name">This is my First Page</h2>
+
+        <h3 style="color: red">This is my First Page</h3>
+
+        <h4 class="my-class">This is my First Page</h4>
+
+        <h5 class="my-class">This is my First Page</h5>
+
+        <h6 id="myH6">This is my First Page</h6>
+      </div>
+
+      <p id="msd" style="line-height: 1.5">
+        <strong>Mahendra Singh Dhoni </strong>, is a former international
+        cricketer who captained the <em> Indian national cricket team </em> in
+        limited-overs formats from <u> 2007 to 2017 </u> and in Test cricket
+        from 2008 to 2014.
+        <small
+          >He is currently the captain of Chennai Super Kings, a franchise based
+          team of Indian Premier League
+        </small>
+      </p>
+
+      <div id="listTags">
+        <ul>
+          <li style="list-style: lower-roman">Indian Cricketer</li>
+          <li>CSK Player</li>
+        </ul>
+
+        <ol>
+          <li>ICC T20</li>
+          <li>ICC champions Trophy</li>
+          <li>ICC 50 over</li>
+        </ol>
+      </div>
+
+      <table border="1">
+        <tr>
+          <td>Name</td>
+          <td>Id</td>
+          <td>class</td>
+          <td>section</td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>Id</td>
+          <td>class</td>
+          <td>section</td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>Id</td>
+          <td>class</td>
+          <td>section</td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>Id</td>
+          <td>class</td>
+          <td>section</td>
+        </tr>
+      </table>
+
+      <img
+        src="https://c.ndtvimg.com/2021-10/gjo8hnng_ms-dhoni-ipl_625x300_07_October_21.jpg"
+      />
+
+      <video controls>
+        <source
+          src="https://www.youtube.com/watch?v=jkflHulY7UM&ab_channel=NetflixIndia"
+          type="video/mp4"
+        />
+      </video>
+    </section>
+
+    <section id="interactionTags">
+      <h3>Interaction Tag</h3>
+
+      <a href="./about.html"> Go TO About</a>
+
+      <a href="https://www.google.com/"> Click here visit Google same Tab </a>
+
+      <a href="https://www.google.com/" target="_blank">
+        Click here visit Google in new tab
+      </a>
+
+      <div id="inputTags">
+        <h3>Input Tags</h3>
+
+        <form>
+          <div id="fbForm">
+            <input
+              id="inputName"
+              type="text"
+              class="my-text-box"
+              placeholder="Email address or phone number"
+            />
+            <br />
+
+            <input type="password" class="my-text-box" placeholder="Password" />
+            <br />
+            <button class="my-fb-login-button" type="button">Log In</button>
+          </div>
+          Phone: <input type="number" />
+          <br />
+          Email: <input type="email" placeholder="Enter Email" />
+          <br />
+
+          DOB: <input type="date" />
+          <br />
+
+          Education :
+          <select>
+            <option>B.tech</option>
+            <option>B.S.C</option>
+            <option>B.com</option>
+          </select>
+          <br />
+
+          <!-- Selecting multiple -->
+          Hobbies <input type="checkbox" /> Hearing Music
+          <input type="checkbox" /> playing cricket
+          <input type="checkbox" /> watching TV
+
+          <br />
+          Gender
+          <input type="radio" name="gender" /> Male
+          <input type="radio" name="gender" /> Female
+          <input type="radio" name="gender" /> Trans
+          <br />
+
+          <!-- Default type Submit -->
+          <button type="button">Submit</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

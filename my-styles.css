@@ -1,0 +1,101 @@
+h1,
+h2,
+h3 {
+  font-family: "Comforter", cursive;
+  font-size: 16px;
+  color: #eaeaea;
+}
+
+h2[id="firstH2"] {
+  color: #8dd7bf;
+}
+
+#myH6 {
+  color: aquamarine;
+}
+
+h2[name="secondH2Name"] {
+  color: #aeaeae;
+}
+
+.my-class {
+  font-family: "Comforter", cursive;
+  font-size: 24px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#listTags {
+  border: 2px solid #000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#msd {
+  border: 2px solid green;
+  padding: 20px;
+  margin-left: 15px;
+}
+
+.my-text-box {
+  border: 1px solid #9b9b9b;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 250px;
+  outline: none;
+}
+
+.my-text-box:focus {
+  border: 1px solid #1877f2;
+}
+
+.my-fb-login-button {
+  color: #1877f2;
+  background-color: white;
+  border: 1px solid #1877f2;
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.my-fb-login-button:hover {
+  color: white;
+  background-color: #1877f2;
+}
+
+#fbForm {
+  width: 250px;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 0px 3px 17px 0px #bdbdbd;
+}
+
+.my-flex {
+  display: flex;
+}
+
+.msd-image {
+  height: 250px;
+  width: 330px;
+}
+
+.flex-demo {
+  height: 500px;
+  width: 900px;
+  background-color: #aeaeae;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: burlywood;
+  color: #000;
+  margin: 10px;
+}

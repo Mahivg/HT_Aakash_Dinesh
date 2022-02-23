@@ -321,6 +321,12 @@
 			
 			3. External Style
 			
+				css in a seperate file and linked to our application
+				
+				file must me .css
+				
+					my-styles.css
+			
 	
 		
 		Styling syntax:
@@ -597,7 +603,83 @@
 		Aakashrocksmsd@gmail.com
 		
 		dineshpalani2001@gmail.com
+		
+		
+		CSS 
+		
+			Flex - Layout design
+			
+			<div style="display: flex;" >
+				<p>  MSD </p>
+				<div> </div>			
+			</div>
+			
+			
+			div - Parent			
+				
+				p - child 
+				div - child
+				
+				p and div - siblings
+				
+				
+		Alignment
+		
+			justify-content - x-axis
+			
+			align-items	
+			
+			
+			
+		One in starting -- another one in end
+		
+			justify-content: space-between;
+			
+		both childs in center
+		
+			justify-content: center;			
 								
+								
+		y-axis
+		
+			align-items: center
+			
+			
+		CSS Libraries
+		
+		
+			Bootstrap
+			
+			Angular Material
+			
+			
+			margin: 10px;
+			
+			.m-1 {
+				margin: 10px;
+			}
+			
+			<h1></h1>
+		
+		HTML, CSS
+		
+			Syntax base languages
+			
+		Javascript
+		
+			Programming Language
+			
+				Browser -> compile and execute
+		
+					
+			
+			
+			
+			
+			
+			
+			
+			
 								
 								
 								

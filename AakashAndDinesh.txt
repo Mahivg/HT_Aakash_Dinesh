@@ -671,7 +671,58 @@
 			
 				Browser -> compile and execute
 		
+		
+		
+		Page Interaction
+		
+			Form Tags
+			
+				Button, Link, input text box
+			
+		Browser Engine
+		
+			JS Engine 
+
+		
+		How to bring JS to HTML
+		
+			1. <script> </script>
+			
+			2. Create a seperate file with .js extension 
+			
+				my-page.js
+				
+		Global Objects
+		
+			window, document 
+			
+		
+		JS programming Language
+		
+		
+			Input type
+			
+				numbers:  1, 2, 1.2, -1. 1.33232,				
+				
+				Text: snaksndkjasnasksasaksnkasnnsasan
+				
+			Data Types
+			
+				number
+				
+				string
+				
+				boolean : true, false
+				
+				Browser Engine
+				
+					Libraries
 					
+						
+				
+				
+			
+			
 			
 			
 			

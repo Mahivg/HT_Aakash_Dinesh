@@ -5,13 +5,11 @@
     <script>
       // JS Code =  ENgine
     </script>
-
-    <script src="./my-page.js"></script>
   </head>
 
   <body>
     <div class="first-parent">
-      <h2 class="title">MS Dhoni</h2>
+      <h2 id="myTitle" class="title">MS Dhoni</h2>
       <div class="info">
         <img
           class="msd-image"
@@ -37,7 +35,7 @@
 
       <div>
         <h3>International career</h3>
-        <p class="information">
+        <p class="information" id="myPtag" name="somename">
           In the second match of the series, Dhoni, in his fifth one-day
           international, scored 148 in Visakhapatnam off only 123 deliveries.
           Dhoni's 148 surpassed the earlier record for the highest score by an
@@ -123,12 +121,24 @@
       <div>
         <h2>Wish Him</h2>
         <div>
-          <textarea class="my-textarea" rows="10" cols="10"></textarea>
+          <textarea
+            id="myTextBox"
+            class="my-textarea"
+            rows="10"
+            cols="10"
+            value="Happy Birthday Dhoni"
+          >
+Happy Birthday Dhoni</textarea
+          >
           <div>
-            <button type="button">Send</button>
+            <button type="button" onclick="printValueFromTextBox()">
+              Send
+            </button>
           </div>
         </div>
       </div>
     </div>
+
+    <script src="./my-page.js"></script>
   </body>
 </html>

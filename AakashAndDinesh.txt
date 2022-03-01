@@ -706,6 +706,18 @@
 				
 				Text: snaksndkjasnasksasaksnkasnnsasan
 				
+				Browser Engine
+				
+					Libraries
+					
+			Browser Console
+			
+				Playground
+				
+				console.log(1+1)
+				
+				
+				
 			Data Types
 			
 				number
@@ -714,15 +726,214 @@
 				
 				boolean : true, false
 				
-				Browser Engine
+			How to create a data in our JS
+			
+				var, let and const
 				
-					Libraries
+				
+				var firstInput = 2;
+				var secondInput = 3;
+				var result = firstInput + secondInput;
+				
+				let firstInput; // Declare
+				let secondInput;
+				
+				
+				firstInput = 2; // Assingment
+				secondInput = 3;
+				
+				const data = 3;
+				data = 4;
+				
+
+					variable name rules
 					
+						1. no space
+						2. should not start with number
+						first name
+						
+						 first_name
+						 
+						 
+				
+				var name = 'Dinesh' or "Dinesh"; => Text or String				
+				var age = 22 or 22.5 or -1222;				
+				var education = 'B.com';
+				var courseCompleted = false;
+				
+				console.log(name);
+				
+				
+				
+				var dineshDetails = {
+					name : 'Dinesh',
+					age : 22,
+					education: 'B.com'
+				}; // Object =>  Javascript Object Notation => JSON
+				
+				
+				console.log(dineshDetails.name);
+				
+				
+				Function:
+				
+				
+					a particular set of lines will be executed whenever we want
+					
+					function print() {
+						//Line 1
+						// Line 2
+					
+					} // function declaration
+					
+					In memory, print() = {};
+					
+					
+					print(); // Function calling
+				
+						 
+						 
+			Object represents something
+			
+			
+				Akash
+				
+					{
+						name: 'Akash',
+						age: 11,
+						printMyHobbies: function() {
+							console.log('
+						}
+					}
+					
+				Dinesh 
+				
+			
+			
+				Car  
+				
+				var myBWMCar = {
+					color : 'red',
+					model: 'BMW',
+					turnLeft: function() {
+						// lines to do to turn car left
+					}
+				}
+				
+				myBWMCar.turnLeft();
+				
+				
+				
+		Global Objects
+		
+			browser engine consists some object
+			
+				window
+				
+				document => current page 
+				
+						textarea id="myTextBox"
+						
+						document.getElementById('myTextBox').value
+				
+				localStorage
+				
+				console
+				
+					log: function
+					
+				sessionStorage
+				
+				
+					
+				
+			
+			
+				
+				
+				
+						
+	 Looping in JS
+	 
+		For loop
+							var d = ["t","s", "saa", "sa"]
+		
+			for(var obj1 of d) {
+			
+				console.log(obj1);
+				
+			}
+			
+			
+		check condition
+		
+			only If 
+			
+				if ( condition ) {
+			
+				}
+			
+			if and else
+		
+				if ( condition ) {
+				
+				} else {
+				
+				}
+			
+			
+		
+		HTML Interaction
+		
+			document
+			
+				getElementById('myId') // return single object
+				
+					id mostly it should be unique
+				
+					it will return HTML tag which has id as myId
+					
+					.value => textbox
+					
+					p, div, => presentation
+					
+					.innerText
+					
+					var myElement = document.getElementById('myId');
+					console.log(myElement.value); // Accessing value
+					
+					myElement.value = "121212"; // Assigning value
+					
+				we can change text, we can add or remove Css class
+				
+				getElementsByClassName('info')
+				
+					array of elements which has css class as info
+					
+				getElementsByName('somename')
+					
+						array of elements which has name as somename
 						
 				
+				querySelector()
+				
+					querySelector('#myId') => first element which has id as myID
+					
+					querySelector('.info') => first element which has css class info
+						
+				querySelectorAll()
+				
+					querySelector('#myId') => array of element which has id as myID
+					
+					querySelector('.info') => array of elements which has css class info
+				
+					
+				
 				
 			
-			
+				
+				
+
 			
 			
 			

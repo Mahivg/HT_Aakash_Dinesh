@@ -857,6 +857,8 @@
 	 
 		For loop
 							var d = ["t","s", "saa", "sa"]
+							
+							d[0]
 		
 			for(var obj1 of d) {
 			
@@ -926,8 +928,76 @@
 					querySelector('#myId') => array of element which has id as myID
 					
 					querySelector('.info') => array of elements which has css class info
-				
 					
+					
+					
+					
+					
+					
+			var add = function(num1, num2) {  
+			
+					console.log(num1 + num2); 
+				}
+				
+			var add = (num1, num1) => {
+					console.log(num1 + num2); 
+				} // Lambda expression
+				
+				
+				
+			
+			create 100 same type of object
+			
+				
+				we have to create a prototype
+				
+				
+		var d =		{
+						name: '',
+						age: '',
+						education: '',
+						printMyAge(){}
+					}
+					
+					Blueprint of an object
+					
+						Class
+						
+						
+						class Student {
+						
+							constructor(studName, studAge, studEdu) {
+								this.name = studName;
+								this.age = studAge;
+								this.education = studEdu;
+							}
+							
+							printMyAge() {
+							
+								console.log('I called ');
+							
+							}
+								
+						}
+						
+						
+						var student1 = new Student('Akash', 22, 'b.com');
+						
+						console.log(student1);
+						
+						var student2 = new Student('DInesh', 22, 'b.com');
+						
+						console.log(student2);
+						
+						
+						{ name: 'Dinesh', age: 22, education: 'b.com' }
+						
+						{ name: 'Akash', age: 24, education: 'B.S.c' }
+						
+						console.log(student1.name);
+						
+						console.log(stu
+						
 				
 				
 			

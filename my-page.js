@@ -23,6 +23,15 @@ console.log(num1);
         }
     };
 
+    var myDetails1 = {
+        name: 'Dinesh',
+        education: 'B.com',
+        age: 24,
+        printMyAge: function(){
+            console.log(this.age);
+        }
+    }
+
     console.log(myDetails.name);
     console.log(myDetails.printMyAge());
 
@@ -40,10 +49,17 @@ executeMyLines(); // Function calling
 
 // var num1; // memory created
 
-function addTwoNumbers(num1, num2) {    
-    const result = num1 + num2;
-    console.log(result);
+// function addTwoNumbers(num1, num2) {    
+//     const result = num1 + num2;
+//     console.log(result);
+//}
+// Commented
+
+
+var addTwoNumbers = (num1, num2) => {
+    console.log(num1 + num2);
 }
+// Lambda Expression for function
 
 addTwoNumbers(10, 13);
 addTwoNumbers(11, 11111);
@@ -84,25 +100,26 @@ var student = {
     year: 'tenth'
 };
 
-var students = [
-    {
-        rollNo : 1,
-        name: 'Test',
-        year: 'tenth',
-        grade: 'A'
-    },
-    {
-        rollNo : 2,
-        name: 'Test1',
-        year: 'tenth',
-        grade: 'B'
-    },
-    {
-        rollNo : 3,
-        name: 'Test1',
-        year: 'tenth',
-        grade: 'A'
+
+class Student {
+    // constructor will be invoked by new keyword
+    constructor(sName, sAge, sEdu, sGrade) { 
+        this.name = sName;
+        this.age = sAge;
+        this.education = sEdu;
+        this.grade = sGrade;
     }
+
+    printMyAge() {
+        console.log(this.age);
+    }
+
+}
+
+var students = [
+    new Student('Akash', 22, 'BTECH', 'A'),
+    new Student('Dinesh', 24, 'BTECH', 'S'),
+    new Student('Nalini', 23, 'BTECH', 'B'),
 ];
 
 // Looping an array
@@ -137,6 +154,7 @@ function printValueFromTextBox() {
     console.log(myPTag.innerText);
     myPTag.innerText = "P tag value changed from JS";
     myPTag.classList.add('bg-blue');
+    myPTag.classList.remove('bg-blue');
 
     // var boxElements = document.getElementsByClassName('team-box');
     // console.dir(boxElements);
@@ -155,6 +173,24 @@ function printValueFromTextBox() {
 
 }
 
+
+
+
+var stud1 = new Student('Dinesh', 23, 'B.com', 'A');
+
+console.log(stud1);
+
+console.log(stud1.name);
+
+console.log(stud1.printMyAge());
+
+var stud2 = new Student('Akash', 24, 'B.S.C', 'A');
+
+console.log(stud2);
+
+console.log(stud2.name);
+
+console.log(stud2.printMyAge());
 
 
 

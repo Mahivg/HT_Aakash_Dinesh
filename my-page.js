@@ -2,6 +2,20 @@
 console.log("I am From HTML ");
 console.log(1 + 1);
 
+
+var myVar1 = "Text";
+myVar1 = "another text";
+console.log(myVar1);
+myVar1 = 10;
+console.log(myVar1);
+myVar1 = true;
+console.log(myVar1);
+myVar1 = {
+    age: 23
+};
+
+console.log(myVar1);
+
 function executeMyLines() {
     var name = "Akash";
 
@@ -9,9 +23,9 @@ function executeMyLines() {
 
     name = 'AK V';
     
-var num1 = 10;
+    var num1 = 10;
 
-console.log(num1);
+    console.log(num1);
 
 
     var myDetails = {
@@ -62,6 +76,7 @@ var addTwoNumbers = (num1, num2) => {
 // Lambda Expression for function
 
 addTwoNumbers(10, 13);
+addTwoNumbers("test1", "test2"); // test1test2
 addTwoNumbers(11, 11111);
 addTwoNumbers(1099001019, 14);
 

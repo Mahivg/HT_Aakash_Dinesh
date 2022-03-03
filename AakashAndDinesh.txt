@@ -971,6 +971,7 @@
 								this.age = studAge;
 								this.education = studEdu;
 							}
+							// Object constructing
 							
 							printMyAge() {
 							
@@ -982,6 +983,11 @@
 						
 						
 						var student1 = new Student('Akash', 22, 'b.com');
+						
+						student1 => memory wil be created
+						
+						In memory =>
+							{ name: 'Akash', age: 24, education: 'B.S.c' }
 						
 						console.log(student1);
 						
@@ -996,7 +1002,7 @@
 						
 						console.log(student1.name);
 						
-						console.log(stu
+						console.log(studen2.name);x
 						
 				
 				
@@ -1014,8 +1020,118 @@
 			
 								
 								
+	Javascript
+	
+		1. Programming
+		
+				data create
+				
+					var data = {};
+					object
+					class
+				for
+				
+				if
+				
+				
+		2. HTML Interaction
+		
+			finding an element
+			
+			adding element
+			
+			changing text
+			
+	
+
+	
+	Web application
+	
+		HTML, CSS, JS
+		
+		
+	Frameworks
+	
+		Angular, ReactJS, VueJs
+		
+			Make web development easier
+		
+		Angular Framework:
+			Rules
+			
+			
+			
+		
+	Disadvantage of Javascript
+	
+		data type 
+		
+	
+	
+	Javascript one layer
+	
+		
+	Typescript
+	
+		superset of javascript
+		
+		var num1: string;
+		
+		num1 = "text";
+		
+		num1 = 10;
+		
+		
+		Installing Typescript
+		
+			1. Open ur command promt
+			
+			2. type
+			
+				tsc -v
+				
+					if u see 'tsc is not recognized......'
+					
+						there is no typescript in our system
+						
+					so
+						1. Check ur system has node
+						
+							open command promt
+							
+								node -v
 								
+								if u see 'node is not recognized......'
 								
+									so
+										install node
+										download node js
+											https://nodejs.org/en/download/
+											
+										install the msi file
+										
+								If no error
+								
+									v.14.10
+									
+									check NPM - Node Package Manager
+									
+										npm -v
+					
+										No error
+		
+						npm install -g typescript
+						
+						tsc -v
+						
+							version
+							
+							now typescript available in our system
+							
+							
+					
+	
+		
 								
 								
 								

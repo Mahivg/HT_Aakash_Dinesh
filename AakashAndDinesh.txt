@@ -1131,7 +1131,69 @@
 							
 					
 	
+			var num1 : number;
+			
+			var stud : Student;
+			
+			var myBoolean : boolean;
+			
+			
+			TS -> we can write JS in more strict and trust manner
+			
+			
+			Compile
+			
+				TS to JS
+				
+				tsc filename.ts
+				
+					filename.js
+					
+			Add watcher
+			
+				tsc filename.ts -w
+				
+			
+			
+			
 		
+		Node
+		
+			node -v
+			
+			 V.ssd
+			 
+			
+			Browser => browser engine
+			
+							=> v8 browser engine
+							
+							v8 browser Javascript engine => window application
+							
+								browser Javascript engine as a application
+								
+			Node is a system level javascript runtime
+			
+				npm install -g typescript
+				
+				node package manager
+					
+						typescript
+					
+							npm install bootstrap
+						
+						node_modules
+						
+							bootstrap
+								.cs
+				
+					
+			
+				
+							
+							
+			
+			
 								
 								
 								

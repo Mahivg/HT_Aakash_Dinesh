@@ -1,3 +1,4 @@
+// import Student from './student';
 
 console.log("I am From HTML ");
 console.log(1 + 1);
@@ -116,25 +117,11 @@ var student = {
 };
 
 
-class Student {
-    // constructor will be invoked by new keyword
-    constructor(sName, sAge, sEdu, sGrade) { 
-        this.name = sName;
-        this.age = sAge;
-        this.education = sEdu;
-        this.grade = sGrade;
-    }
-
-    printMyAge() {
-        console.log(this.age);
-    }
-
-}
 
 var students = [
-    new Student('Akash', 22, 'BTECH', 'A'),
-    new Student('Dinesh', 24, 'BTECH', 'S'),
-    new Student('Nalini', 23, 'BTECH', 'B'),
+    // new Student('Akash', 22, 'BTECH', 'A'),
+    // new Student('Dinesh', 24, 'BTECH', 'S'),
+    // new Student('Nalini', 23, 'BTECH', 'B'),
 ];
 
 // Looping an array

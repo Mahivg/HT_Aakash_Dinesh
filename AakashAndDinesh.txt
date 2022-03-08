@@ -1185,10 +1185,237 @@
 						node_modules
 						
 							bootstrap
-								.cs
+							.cs
 				
-					
 			
+			Node will be used to setup our development environment
+			
+			
+			Node is platform
+			
+				
+				
+			Angular
+			
+				Framework
+				
+					- is a bundle
+					- Single Page Application - SPA Architecture
+					
+						1. Only one html file with structure
+						
+							Base html or Root Html
+						
+							<html>
+							
+								<head>
+									style
+									js
+								
+								</head>
+								
+								<body>
+									
+									<!-- place holder->
+									
+								</body>
+							
+							</html>
+							
+						2. As many as html can be created
+						
+							<div> 
+							
+								<h2>
+								
+								<p>
+							</div>
+			
+			
+		3. Angular Installation
+		
+		
+			Steps:
+			
+				1. check angular
+				
+					ng --version
+					
+					if 'ng is not recognized'
+					
+					so install angular
+					
+					
+						npm install -g @angular/cli
+						
+						then again
+						
+						ng --version
+						
+						v.12.12
+						
+						
+			1. Creating first application
+			
+				Command to create new application
+				
+					ng new "ApplicationName"
+					
+					ng new MyFirstApp
+					
+					 Questions 
+					 
+						1. survey -> N
+						
+						2. Routing -> N
+						
+					Running the application
+					
+						ng serve
+						
+							localhost:4200
+							
+						ng serve --port=4221
+								
+						
+		
+		3. What we have to do in Angular applicaiton
+		
+				1. Find root html
+				
+					src folder -> index.html 
+					
+									(Structure)
+									
+				2. Src 
+				
+					Navigation
+					
+						navigation.html
+						
+							navigation.component.html
+							navigation.component.css
+							navigation.component.ts
+							
+								Custom HTML tag - <dinesh-navigation> </dinesh-navigation>
+							
+						
+							all html codes for that						
+						
+						scrollingimage.html
+							scrollingimage.component.html
+							scrollingimage.component.css
+							all html code for image scroll
+							
+							<dinesh-scrollimage> </dinesh-scrollimage>
+							
+				Component Based development
+					Functionlity based component
+					
+					
+				One component => combination of 3 files
+				
+									.html, .css, .ts var myVar= {}
+									
+				
+			app.component.html
+			
+			app.component.css
+			
+			app.component.ts
+			
+			AppComponent  -> <app-root> </app-root>
+			
+				Root Component
+							
+							
+		
+			app.component.html
+			
+				<dinesh-navigation> </dinesh-navigation>
+				
+				<dinesh-scrollimage> </dinesh-scrollimage>
+							
+							
+							
+						
+							
+							
+	How component works
+	
+	
+		component.ts
+		
+			
+			@Component({
+				selector: 'app-root', // a text to be given as HTML <app-root> </app-root>,
+				
+				templateUrl: './app-component.html',
+				styleUrls: ['./app-component.css']
+			})			
+			export class AppComponent {
+					// Javascript file for ur HTML
+					// Controller
+			}
+			
+			// One component
+			
+	Bootstrap
+	
+		How to integerate Bootstrap
+		
+		
+			First install bootstrap
+				npm install bootstrap
+				
+				under node_modules
+				
+		Linking to our applicaiton
+		
+			angular.json
+			
+				-> all configuration about application
+				
+				
+				29 -> styles : [
+				
+						path for our css
+						'./node_modules/bootstrap/dist/css/bootstrap.min.css'
+					]
+					
+	Presentation
+	
+		only presentation tags
+		
+		Static Data
+	
+		Data (TS) -> HTML
+		
+	Interaction
+		
+		handling click or events
+		
+		Forms
+		
+			How to get Inputs from user
+			
+			how to handles input data
+			
+	How to handle data from outside	
+	
+		outside of our angular applicaiton
+		
+	
+		
+		
+		
+		
+		
+		
+		
+				
+				
+						
 				
 							
 							

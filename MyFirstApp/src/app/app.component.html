@@ -19,19 +19,10 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >Disabled</a
-            >
+            <a class="nav-link" href="#">Cart</a>
           </li>
         </ul>
       </div>
@@ -39,106 +30,223 @@
   </nav>
 
   <div>
-    <div class="info">
-      <img
-        class="msd-image"
-        src="https://c.ndtvimg.com/2021-10/gjo8hnng_ms-dhoni-ipl_625x300_07_October_21.jpg"
-      />
-      <div>
-        <p class="information">
-          Mahendra Singh Dhoni (born 7 July 1981), was a former international
-          cricketer who plays as a wicketkeeper and a right-handed middle order
-          batsman. His power hitting ability made his reputation as a finisher.
-          He is widely considered as one of the greatest white ball cricket
-          captain ever [1] .He captained the Indian national cricket team in
-          limited-overs formats from 2007 to 2017 and in Test cricket from 2008
-          to 2014. He led the team to three ICC titles (2007 ICC World Twenty20,
-          2011 ICC Cricket World Cup and 2013 ICC Champions Trophy) and brought
-          the Indian cricket team to number one position in ICC test rankings in
-          2009.[3][4] He is current captain of Chennai super king in IPL. He
-          also led CSK to win the 2010, 2011, 2018 and 2021 editions of IPL.
-        </p>
-      </div>
-    </div>
+    <p>{{ title }}</p>
+    <p id="{{ myPTagId }}">{{ 1 == 1 }}</p>
 
-    <div>
-      <h3>International career</h3>
-      <p class="information" id="myPtag" name="somename">
-        In the second match of the series, Dhoni, in his fifth one-day
-        international, scored 148 in Visakhapatnam off only 123 deliveries.
-        Dhoni's 148 surpassed the earlier record for the highest score by an
-        Indian wicket-keeper,[55] a record that he would re-write before the end
-        of the year. Dhoni had few batting opportunities in the first two games
-        of the Sri Lankan bilateral ODI series (October–November 2005) and was
-        promoted to No. 3 in the third ODI at Sawai Mansingh Stadium (Jaipur).
-        Sri Lanka had set India a target of 299 after a Kumar Sangakkara century
-        and, in reply, India lost Tendulkar early. Dhoni was promoted to
-        accelerate the scoring and ended the game with an unbeaten 183 off 145
-        balls, winning the game for India.[56] The innings was described in
-        Wisden Almanack (2006) as 'Uninhibited, yet anything but crude'.[57] The
-        innings set various records including the highest individual score in
-        ODI cricket in the second innings,[58] a record only broken after seven
-        years by Shane Watson.[59] Dhoni ended the series with the highest run
-        aggregate (346)[60] and was awarded the Man of the Series award for his
-        efforts. In December 2005, Dhoni was rewarded a B-grade contract by the
-        BCCI.[61] Dhoni bowling in the nets. He rarely bowled at international
-        level. India scored 328 in 50 overs with Dhoni contributing 68 in their
-        first match of 2006 against Pakistan. However, the team finished poorly,
-        scoring just 43 runs in the last eight overs and lost the match due to
-        Duckworth-Lewis method.[62] In the third match of the series, Dhoni came
-        in with India in a precarious situation and scored 72 runs off just 46
-        balls that included 13 boundaries to help India take a 2–1 lead in the
-        series.[63][64] The final match of the series had a repeat performance
-        as Dhoni scored 77 runs off 56 balls to enable India win the series
-        4–1.[65] Due to his consistent ODI performances, Dhoni overtook Ricky
-        Ponting as number one in the ICC ODI Rankings for batsmen on 20 April
-        2006 becoming the fastest batsman to do so, in 42 innings.[66] His reign
-        lasted just a week as Adam Gilchrist's performance against Bangladesh
-        moved him to the top spot.[67] Two cancelled series in Sri Lanka, one
-        due to the withdrawal of South Africa from the Unitech Cup due to
-        security concerns[68] and the replacement three-match ODI bilateral
-        series against Sri Lanka washed due to rain,[69] was India's prelude to
-        another disappointing tournament – DLF Cup 2006-07. Dhoni scored 43 runs
-        as the team lost twice in three games and did not qualify for the
-        finals. India's lack of preparation showed in the 2006 ICC Champions
-        Trophy as they lost to West Indies and Australia, though Dhoni scored a
-        half-century against West Indies. The story of the ODI series in South
-        Africa was the same for both Dhoni and India as Dhoni scored 139 runs in
-        4 matches and India lost the series 4–0. From the start of the West
-        Indies ODI series, Dhoni had played 16 matches, hit just two fifties and
-        averaged 25.93. Dhoni received criticism on his wicket-keeping technique
-        from former wicket-keeper Syed Kirmani.[70] Yet, for his performances in
-        2006, he was named in the World ODI XI by the ICC.[71]
-      </p>
-    </div>
-    <div>
-      <h3>Team Played</h3>
+    <p>My Num is : {{ myNum }}</p>
 
-      <div class="teams">
-        <div class="team-box">
-          <div class="team-box-title">
-            <img
-              class="team-image"
-              src="https://i.pinimg.com/474x/b2/cc/c3/b2ccc31db6ac9c8669421d629efd8e70.jpg"
-              alt=""
-            />
-            <p>Team India A</p>
-          </div>
+    <p>My Obj is : {{ myObj }}</p>
 
-          <p>From 2006 - 2021</p>
+    <p>My Users array : {{ users[0].userName }}</p>
+  </div>
+
+  <div id="loginScreen">
+    <h2 class="text-center">Login</h2>
+    <div class="my-login">
+      <div class="col-md-8">
+        <div class="form-group">
+          <label class="control-label"> User Name </label>
+          <input id="userName" type="email" class="form-control" />
         </div>
 
-        <div class="team-box">
-          <div class="team-box-title">
-            <img
-              class="team-image"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkcscjyBEw-Rs2iwwBux3KghW5uKpeDleD2j8wuX6uVKznqIDWOY35xQi33iC595lrNYY&usqp=CAU"
-              alt=""
-            />
-            <p>Chennai Super Kings</p>
-          </div>
+        <div class="form-group mt-3">
+          <label class="control-label"> Password </label>
+          <input id="password" type="password" class="form-control" />
+        </div>
 
-          <p>From 2008 - Present</p>
+        <div class="text-center mt-3">
+          <button type="button" class="btn btn-success">LOGIN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="productsScreen">
+    <div class="mt-4 mb-4">
+      <h2 class="mb-4">Products</h2>
+      <div class="product-list">
+        <div class="product-detail">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/I/91kPj1D0sML._AC._SR360,460.jpg"
+            alt=""
+            srcset=""
+            class="product-img"
+          />
+          <div class="product-info">
+            <h2>Bag for men</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              tempora reprehenderit voluptatem amet officia culpa quas
+              molestiae. Ducimus voluptatem ab ex temporibus. Voluptatum alias
+              cupiditate veniam impedit fuga numquam nesciunt?
+            </p>
+          </div>
+        </div>
+
+        <div class="product-detail">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbjPTzcD7EqVvRchqKsXiMOAfMs0TZ_f9nIQ&usqp=CAU"
+            alt=""
+            srcset=""
+            class="product-img"
+          />
+          <div class="product-info">
+            <h2>Shoulder bag</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              tempora reprehenderit voluptatem amet officia culpa quas
+              molestiae. Ducimus voluptatem ab ex temporibus. Voluptatum alias
+              cupiditate veniam impedit fuga numquam nesciunt?
+            </p>
+          </div>
+        </div>
+        <div class="product-detail">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/I/91kPj1D0sML._AC._SR360,460.jpg"
+            alt=""
+            srcset=""
+            class="product-img"
+          />
+          <div class="product-info">
+            <h2>Bag for men</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              tempora reprehenderit voluptatem amet officia culpa quas
+              molestiae. Ducimus voluptatem ab ex temporibus. Voluptatum alias
+              cupiditate veniam impedit fuga numquam nesciunt?
+            </p>
+          </div>
+        </div>
+
+        <div class="product-detail">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/I/91kPj1D0sML._AC._SR360,460.jpg"
+            alt=""
+            srcset=""
+            class="product-img"
+          />
+          <div class="product-info">
+            <h2>Bag for men</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              tempora reprehenderit voluptatem amet officia culpa quas
+              molestiae. Ducimus voluptatem ab ex temporibus. Voluptatum alias
+              cupiditate veniam impedit fuga numquam nesciunt?
+            </p>
+          </div>
+        </div>
+        <div class="product-detail">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/I/91kPj1D0sML._AC._SR360,460.jpg"
+            alt=""
+            srcset=""
+            class="product-img"
+          />
+          <div class="product-info">
+            <h2>Bag for men</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              tempora reprehenderit voluptatem amet officia culpa quas
+              molestiae. Ducimus voluptatem ab ex temporibus. Voluptatum alias
+              cupiditate veniam impedit fuga numquam nesciunt?
+            </p>
+          </div>
+        </div>
+
+        <div class="product-detail">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/I/91kPj1D0sML._AC._SR360,460.jpg"
+            alt=""
+            srcset=""
+            class="product-img"
+          />
+          <div class="product-info">
+            <h2>Bag for men</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              tempora reprehenderit voluptatem amet officia culpa quas
+              molestiae. Ducimus voluptatem ab ex temporibus. Voluptatum alias
+              cupiditate veniam impedit fuga numquam nesciunt?
+            </p>
+          </div>
+        </div>
+
+        <div class="product-detail">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/I/91kPj1D0sML._AC._SR360,460.jpg"
+            alt=""
+            srcset=""
+            class="product-img"
+          />
+          <div class="product-info">
+            <h2>Bag for men</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              tempora reprehenderit voluptatem amet officia culpa quas
+              molestiae. Ducimus voluptatem ab ex temporibus. Voluptatum alias
+              cupiditate veniam impedit fuga numquam nesciunt?
+            </p>
+          </div>
+        </div>
+
+        <div class="product-detail">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/I/91kPj1D0sML._AC._SR360,460.jpg"
+            alt=""
+            srcset=""
+            class="product-img"
+          />
+          <div class="product-info">
+            <h2>Bag for men</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              tempora reprehenderit voluptatem amet officia culpa quas
+              molestiae. Ducimus voluptatem ab ex temporibus. Voluptatum alias
+              cupiditate veniam impedit fuga numquam nesciunt?
+            </p>
+          </div>
+        </div>
+
+        <div class="product-detail">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/I/91kPj1D0sML._AC._SR360,460.jpg"
+            alt=""
+            srcset=""
+            class="product-img"
+          />
+          <div class="product-info">
+            <h2>Bag for men</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              tempora reprehenderit voluptatem amet officia culpa quas
+              molestiae. Ducimus voluptatem ab ex temporibus. Voluptatum alias
+              cupiditate veniam impedit fuga numquam nesciunt?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="productDetailScreen">
+    <div class="mt-3">
+      <h2 class="mb-3">Product Detail</h2>
+      <div class="my-product-detail">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbjPTzcD7EqVvRchqKsXiMOAfMs0TZ_f9nIQ&usqp=CAU"
+          alt=""
+          srcset=""
+          class="my-product-detail-img"
+        />
+        <div>
+          <h2>Product Name</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea aut
+            distinctio quos quidem error ipsam ad eum inventore architecto
+            voluptate. Amet consectetur laborum fugit sint obcaecati architecto
+            consequatur praesentium blanditiis.
+          </p>
+          <p>Product Specificationss</p>
         </div>
       </div>
     </div>

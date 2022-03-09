@@ -1406,6 +1406,36 @@
 		outside of our angular applicaiton
 		
 	
+	
+	Data projection to HTML
+	
+	
+		Data Binding:
+		
+			Data from TS will be binded to HTML
+			
+			TS, HTML, CSS => Binded together
+			
+			
+			Angular way
+			
+			TS
+			
+				title = 'MyFirstApp';
+				
+			HTML
+			
+				<p> {{ title }}  </p>
+				
+				
+				{{}} => String interpolation
+				
+				{{ 1 * 3 }}
+				
+			<p> </p>
+				
+			
+			
 		
 		
 		

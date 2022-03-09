@@ -1433,6 +1433,113 @@
 				{{ 1 * 3 }}
 				
 			<p> </p>
+			
+			
+			
+	
+		Directives
+		
+			<p id="myId" name="myName"  > </p>
+			
+			It will work on our HTML Tag
+			
+		1. Hide and show
+		
+			*ngIf=""
+			
+			showLogin: boolean = false;
+			
+			
+			<p id="myId" name="myName" *ngIf="showLogin" > </p>
+			
+			if(true | false) {
+			
+			} else {
+			
+			}
+		
+		2. Repeating HTML
+		
+				myArr: string[] = ["akash", "Dinesh", "Magesh"]
+				
+				{{ myArr }} => akash,Dinesh,Magesh
+				
+				for(var str of myArr) {
+					console.log(str);
+				}
+				
+				<p *ngFor="let str of myArr" > 
+					{{ str }} 
+				</p>
+				
+				<div *ngFor="let str of myArr" >
+					<p> {{ str }} </p>
+				</div>
+				
+				<div>
+					<p> Akash </p>
+				<div>
+				
+				<div>
+					<p> Dinesh </p>
+				<div>
+				
+				<div>
+					<p> Magesh </p>
+				<div>
+				
+				
+		Data in TS displayed in HTML
+		
+		.js
+			function one() {
+			
+			}
+		
+		<button onclick="one()" >
+		
+		<button (click)="one()" > CLick me </button>
+		
+		
+		Steps
+			
+			1. Created Products Array
+			
+					products: Product[];
+			
+					Length = 9
+					
+			2. Using ng For we displayed Producrs
+			
+			
+				<div *ngFor="let myProd of products">
+				
+			3. Created seclectedProduct variable in controller
+			
+				seclectedProduct: Product;
+				
+			4. Assigned first product as value
+				
+				seclectedProduct: Product = products[0];
+				
+			5. Displayed SelectedProdcut Details in HTML
+			
+			
+			6. Created a method called selectProduct(prod: Product) 
+			
+			
+			7. Inside that function I changed seclectedProduct value with received value
+			
+				seclectedProduct = prod;
+				
+			8. called this selectProduct method in ngFor of products
+			
+		
+		
+			
+		
+	
+		
 				
 			
 			

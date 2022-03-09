@@ -29,7 +29,7 @@
     </div>
   </nav>
 
-  <div>
+  <div *ngIf="showDemo">
     <p>{{ title }}</p>
     <p id="{{ myPTagId }}">{{ 1 == 1 }}</p>
 
@@ -38,6 +38,20 @@
     <p>My Obj is : {{ myObj }}</p>
 
     <p>My Users array : {{ users[0].userName }}</p>
+
+    <button type="button" class="btn btn-primary" (click)="clickMe(10)">
+      Click Me !!
+    </button>
+  </div>
+
+  <div *ngFor="let name of myStudents">
+    <p>{{ name }}</p>
+  </div>
+
+  <div *ngFor="let myUser of users">
+    <p>User Name : {{ myUser.userName }}</p>
+    <p>Password : {{ myUser.password }}</p>
+    <p>EmailID : {{ myUser.emailId }}</p>
   </div>
 
   <div id="loginScreen">
@@ -65,162 +79,22 @@
     <div class="mt-4 mb-4">
       <h2 class="mb-4">Products</h2>
       <div class="product-list">
-        <div class="product-detail">
+        <!-- Product  -->
+        <div
+          class="product-detail"
+          *ngFor="let myProd of products"
+          (click)="selectProduct(myProd)"
+        >
           <img
-            src="https://images-eu.ssl-images-amazon.com/images/I/91kPj1D0sML._AC._SR360,460.jpg"
+            src="{{ myProd.imageUrls[0] }}"
             alt=""
             srcset=""
             class="product-img"
           />
           <div class="product-info">
-            <h2>Bag for men</h2>
+            <h2>{{ myProd.name }}</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              tempora reprehenderit voluptatem amet officia culpa quas
-              molestiae. Ducimus voluptatem ab ex temporibus. Voluptatum alias
-              cupiditate veniam impedit fuga numquam nesciunt?
-            </p>
-          </div>
-        </div>
-
-        <div class="product-detail">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbjPTzcD7EqVvRchqKsXiMOAfMs0TZ_f9nIQ&usqp=CAU"
-            alt=""
-            srcset=""
-            class="product-img"
-          />
-          <div class="product-info">
-            <h2>Shoulder bag</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              tempora reprehenderit voluptatem amet officia culpa quas
-              molestiae. Ducimus voluptatem ab ex temporibus. Voluptatum alias
-              cupiditate veniam impedit fuga numquam nesciunt?
-            </p>
-          </div>
-        </div>
-        <div class="product-detail">
-          <img
-            src="https://images-eu.ssl-images-amazon.com/images/I/91kPj1D0sML._AC._SR360,460.jpg"
-            alt=""
-            srcset=""
-            class="product-img"
-          />
-          <div class="product-info">
-            <h2>Bag for men</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              tempora reprehenderit voluptatem amet officia culpa quas
-              molestiae. Ducimus voluptatem ab ex temporibus. Voluptatum alias
-              cupiditate veniam impedit fuga numquam nesciunt?
-            </p>
-          </div>
-        </div>
-
-        <div class="product-detail">
-          <img
-            src="https://images-eu.ssl-images-amazon.com/images/I/91kPj1D0sML._AC._SR360,460.jpg"
-            alt=""
-            srcset=""
-            class="product-img"
-          />
-          <div class="product-info">
-            <h2>Bag for men</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              tempora reprehenderit voluptatem amet officia culpa quas
-              molestiae. Ducimus voluptatem ab ex temporibus. Voluptatum alias
-              cupiditate veniam impedit fuga numquam nesciunt?
-            </p>
-          </div>
-        </div>
-        <div class="product-detail">
-          <img
-            src="https://images-eu.ssl-images-amazon.com/images/I/91kPj1D0sML._AC._SR360,460.jpg"
-            alt=""
-            srcset=""
-            class="product-img"
-          />
-          <div class="product-info">
-            <h2>Bag for men</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              tempora reprehenderit voluptatem amet officia culpa quas
-              molestiae. Ducimus voluptatem ab ex temporibus. Voluptatum alias
-              cupiditate veniam impedit fuga numquam nesciunt?
-            </p>
-          </div>
-        </div>
-
-        <div class="product-detail">
-          <img
-            src="https://images-eu.ssl-images-amazon.com/images/I/91kPj1D0sML._AC._SR360,460.jpg"
-            alt=""
-            srcset=""
-            class="product-img"
-          />
-          <div class="product-info">
-            <h2>Bag for men</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              tempora reprehenderit voluptatem amet officia culpa quas
-              molestiae. Ducimus voluptatem ab ex temporibus. Voluptatum alias
-              cupiditate veniam impedit fuga numquam nesciunt?
-            </p>
-          </div>
-        </div>
-
-        <div class="product-detail">
-          <img
-            src="https://images-eu.ssl-images-amazon.com/images/I/91kPj1D0sML._AC._SR360,460.jpg"
-            alt=""
-            srcset=""
-            class="product-img"
-          />
-          <div class="product-info">
-            <h2>Bag for men</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              tempora reprehenderit voluptatem amet officia culpa quas
-              molestiae. Ducimus voluptatem ab ex temporibus. Voluptatum alias
-              cupiditate veniam impedit fuga numquam nesciunt?
-            </p>
-          </div>
-        </div>
-
-        <div class="product-detail">
-          <img
-            src="https://images-eu.ssl-images-amazon.com/images/I/91kPj1D0sML._AC._SR360,460.jpg"
-            alt=""
-            srcset=""
-            class="product-img"
-          />
-          <div class="product-info">
-            <h2>Bag for men</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              tempora reprehenderit voluptatem amet officia culpa quas
-              molestiae. Ducimus voluptatem ab ex temporibus. Voluptatum alias
-              cupiditate veniam impedit fuga numquam nesciunt?
-            </p>
-          </div>
-        </div>
-
-        <div class="product-detail">
-          <img
-            src="https://images-eu.ssl-images-amazon.com/images/I/91kPj1D0sML._AC._SR360,460.jpg"
-            alt=""
-            srcset=""
-            class="product-img"
-          />
-          <div class="product-info">
-            <h2>Bag for men</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              tempora reprehenderit voluptatem amet officia culpa quas
-              molestiae. Ducimus voluptatem ab ex temporibus. Voluptatum alias
-              cupiditate veniam impedit fuga numquam nesciunt?
+              {{ myProd.shortDescription }}
             </p>
           </div>
         </div>
@@ -233,18 +107,15 @@
       <h2 class="mb-3">Product Detail</h2>
       <div class="my-product-detail">
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbjPTzcD7EqVvRchqKsXiMOAfMs0TZ_f9nIQ&usqp=CAU"
+          src="{{ selectedProduct.imageUrls[0] }}"
           alt=""
           srcset=""
           class="my-product-detail-img"
         />
         <div>
-          <h2>Product Name</h2>
+          <h2>{{ selectedProduct.name }}</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea aut
-            distinctio quos quidem error ipsam ad eum inventore architecto
-            voluptate. Amet consectetur laborum fugit sint obcaecati architecto
-            consequatur praesentium blanditiis.
+            {{ selectedProduct.shortDescription }}
           </p>
           <p>Product Specificationss</p>
         </div>

@@ -1458,7 +1458,7 @@
 			
 			}
 		
-		2. Repeating HTML
+		2. Repeating HTML using NgFOr
 		
 				myArr: string[] = ["akash", "Dinesh", "Magesh"]
 				
@@ -1536,6 +1536,82 @@
 			
 		
 		
+	Angular given a root component (Base)
+
+		app.component.html
+		
+		app.component.css
+		
+		app.component.ts
+		
+			We have to create our own components
+			
+			Based on our applicaiton we have to decide how many components needed
+			
+				Navbar
+				
+				Login
+				
+				Products
+				
+				Product-Detail
+			
+			
+		Steps to create a component
+		
+			1. Manually
+			
+				-> Create a folder with ur component name
+				
+					navbar
+						navbar.component.html
+						navbar.component.css
+						navbar.component.ts
+						
+							<da-navbar> </da-navbar>
+							@Component({
+								selector: 'da-navbar',
+								templateUrl: './navbar.component.html',
+								styleUrls: ['./navbar.component.css']
+							})
+							export class NavbarComponent {
+							
+							}
+							
+				-> We have to intimate Angular
+				
+					app.module.ts
+					
+						Registration  file
+						
+						
+						@NgModule({
+							
+							declarations: [NavbarComponent ]
+						
+						})
+						export class AppMOdule {
+						
+						}
+						
+						
+		2. Using Commands 
+		
+			Command to create a component
+			
+				ng generate component 'ComponentName'
+				
+				ex: 
+					ng generate component products
+					
+					short form
+					
+						ng g c 'ComponentName'
+						
+					example
+					
+						ng g c product-detail
+			
 			
 		
 	

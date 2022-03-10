@@ -1,9 +1,3 @@
-.my-login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .product-list {
   display: flex;
   flex-wrap: wrap;
@@ -35,4 +29,14 @@
 .my-product-detail-img {
   height: 550px;
   width: 550px;
+}
+
+.my-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #919192;
 }

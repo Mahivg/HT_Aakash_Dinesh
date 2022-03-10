@@ -40,6 +40,6 @@ var getAndPrintDetailLambda = () => {
 
 
 
-var subBtn = document.getElementById('submitButton');
-subBtn.addEventListener('click', getAndPrintDetailLambda);
+// var subBtn = document.getElementById('submitButton');
+// subBtn.addEventListener('click', getAndPrintDetailLambda);
 

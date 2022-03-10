@@ -10,6 +10,8 @@ import { User } from './models/user';
 export class AppComponent {
   title = 'MyFirstApp';
 
+  selectedDiv: string = 'demo';
+
   myPTagId = 'pTag1';
 
   myNum = 10;
@@ -86,6 +88,10 @@ export class AppComponent {
 
   selectProduct(prod: Product) {
     this.selectedProduct = prod;
+  }
+
+  changeSelectedDiv(divName: string) {
+    this.selectedDiv = divName;
   }
 
 

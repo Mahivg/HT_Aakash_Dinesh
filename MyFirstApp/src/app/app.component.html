@@ -1,7 +1,7 @@
 <div class="container">
   <da-navbar></da-navbar>
 
-  <div class="my-buttons">
+  <!-- <div class="my-buttons">
     <button
       type="button"
       class="btn btn-warning"
@@ -55,37 +55,19 @@
       <p>Password : {{ myUser.password }}</p>
       <p>EmailID : {{ myUser.emailId }}</p>
     </div>
+  </div> -->
+
+  <div>
+    <router-outlet></router-outlet>
   </div>
 
-  <div id="loginScreen" *ngIf="selectedDiv == 'login'">
-    <da-login></da-login>
+  <!-- <div id="loginScreen" *ngIf="selectedDiv == 'login'">
+    <da-login [usersData]="users"></da-login>
   </div>
 
   <div id="productsScreen" *ngIf="selectedDiv == 'products'">
-    <da-products></da-products>
     <div class="mt-4 mb-4">
-      <h2 class="mb-4">Products</h2>
-      <div class="product-list">
-        <!-- Product  -->
-        <div
-          class="product-detail"
-          *ngFor="let myProd of products"
-          (click)="selectProduct(myProd)"
-        >
-          <img
-            src="{{ myProd.imageUrls[0] }}"
-            alt=""
-            srcset=""
-            class="product-img"
-          />
-          <div class="product-info">
-            <h2>{{ myProd.name }}</h2>
-            <p>
-              {{ myProd.shortDescription }}
-            </p>
-          </div>
-        </div>
-      </div>
+      <da-products [prods]="products"></da-products>
     </div>
   </div>
 
@@ -109,5 +91,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>

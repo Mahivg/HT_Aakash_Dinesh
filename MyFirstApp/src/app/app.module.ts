@@ -6,13 +6,30 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { RouterModule, Routes } from '@angular/router';
 
+
+const routes: Routes = [
+  {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'products',
+    component: ProductsComponent
+  },
+  {
+    path: 'product-detail',
+    component: ProductDetailComponent
+  }
+];
 @NgModule({
   declarations: [
     AppComponent, NavbarComponent, LoginComponent, ProductsComponent, ProductDetailComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

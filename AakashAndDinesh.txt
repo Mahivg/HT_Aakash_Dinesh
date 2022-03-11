@@ -1611,6 +1611,140 @@
 					example
 					
 						ng g c product-detail
+						
+	
+Component Communication:
+	
+	AppComponent => Root component =>  Parent
+	
+		app.component.html
+		
+			<da-navbar> => NavbarComponent => Child
+			
+			<da-login> => LoginComponent => child 
+			
+			<da-product> => ProductsComponent => Child
+			
+			all the above are siblings each other
+			
+			
+	AppComponent => data holder
+		products:  Product[] = [9 Products];
+		products => data
+	
+		NavbarComponent
+		
+		LoginComponent
+		
+		ProductsComponent
+		
+			products:  Product[] = [9 Products];
+			
+			
+	Rules to send data from Parent to child
+	
+		1. Parent component  (app.component.ts)
+
+			myProducts: Product[] = // Data
+			
+			
+		2. Create a variable in child as well (products.component.ts)
+		
+			myChildProducts: Product[];
+			
+		3. Html
+		
+			parent's html
+				
+				<da-products [myChildProducts]="myProducts" > </da-products>
+				
+		4. Intimate angular about the child variable
+		
+			 @Input()
+			 myChildProducts: Product[];
+	
+	
+	AppCOmponet
+	
+	
+	 Products => Parent
+	 
+		Product-Detail 
+		
+		
+	
+	Routing:
+	
+		Based on URL change, respective page will be rendered
+	
+		html
+			head
+			
+			body
+			
+				
+				
+		1. click on a button or a link tag
+			
+				localhost:4200/login
+				
+					LoginComponent
+					
+				localhost:4200/products
+				
+					ProductsComponent
+					
+	
+		Rules for Routing:
+		
+			1. Create routes
+			
+			
+				const routes : Routes = [
+					{
+						path: 'login',
+						component: LoginComponent
+					},
+					{
+						path: 'products',
+						component: ProductComponent
+					},
+					{
+						path: 'product-detail',
+						component: ProductDetailCOmponent
+					}
+				]
+				
+			2. Angular Intimate it,
+			
+				app.module.ts
+				
+					imports: [ RouterModule.forRoot(routes) ]
+					
+			3. Placeholder
+			
+				<router-outlet> </router-outlet>
+				
+			4. Trigger the URL change
+			
+				<a href="login" />
+				
+			5. To avoid Reloading
+			
+				<a routerLink="login" />
+				
+				
+	HTML -> page -> html
+	
+		
+			
+				
+	
+	
+	
+	
+	
+	
 			
 			
 		

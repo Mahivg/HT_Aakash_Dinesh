@@ -1,5 +1,6 @@
 import { Component, Input } from "@angular/core";
 import { User } from "../models/user";
+import { UserService } from "../services/users.service";
 
 @Component({
   selector: 'da-login',
@@ -8,7 +9,8 @@ import { User } from "../models/user";
 })
 export class LoginComponent {
 
-  @Input()
-  usersData: User[];
+  userService: UserService = new UserService();
+
+  usersData: User[] = this.userService.getUsers();
 
 }

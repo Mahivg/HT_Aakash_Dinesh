@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../services/products.service';
 
 @Component({
   selector: 'da-product-detail',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailComponent implements OnInit {
 
-  constructor() { }
+  // productService: ProductService = new ProductService();
+
+  constructor(public productService: ProductService) { } // As Request
 
   ngOnInit(): void {
+  }
+
+  printProducts() {
+    const products = this.productService.getProducts();
+    console.log(products);
   }
 
 }

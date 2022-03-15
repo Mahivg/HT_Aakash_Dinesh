@@ -1737,13 +1737,237 @@ Component Communication:
 	HTML -> page -> html
 	
 		
+		
+	1. Creating Component
+		
+		-> Manually
+		-> with commands		
+				ng g c ComponentName
+	
+		Navbar, Login, Products, ProductDetail
+	
+	2. Placing a component
+		appcomponent.html
+		
+			Navbar
 			
+				<router-outlet> </router-outlet>
+			
+		Appcomponent.ts
+		
+			products: Product[]
+			
+			ProductComponet.ts
+			
+				prods: Product[]
+		
+	
+		Parent - child => Communicate (data pass)
+		
+				@Input()
+			
+	3. Data Binding
+	
+		div *ngFor="let product of prods"
+			
+
+			{{}} => {{ variable Name }}
+	
+	4. Directives
+	
+		ngIf,
+		
+			*ngIf="variable || boolean"
+			
+			Hide and show
+			
+			Login 		Products		Product-Detail
+			
+			div *ngIf="divName == 'login'"
+		
+		ngFor
+		
+			div *ngFor="let myData of ArrayName"
+			
+	5. Routing
+	
+		Based on url change, we rendered a component
+		
+			-> creating routes
+			
+				[
+					{
+						path: 'login',
+						component: : LoginComponent
+					},
+					{
+						path: 'products',
+						component: : ProductsComponent
+					},
+					{
+						path: 'product-detail',
+						component: : ProductDetailCOmponent
+					}
+				]
+			
+			-> Registering routes
+			
+				app.module.ts
+				
+					imports: [ RouterModule.forRoot(routes) ]
+			
+			-> Placeholder
+					<router-outlet> </router-outlet>
+					
+			-> triggering routes
+				
+				<a routerLink="login" />
+				
+		
+		
+		
 				
 	
+	App-component.thml
+	
+		<router-outlet> </router-outlet>
 	
 	
 	
+	class User {
+		name: string;
+		
+		age: number;
+		
+		constructor(uName: string, uage: number) {
+			this.name = uName;
+			this.age = uage;
+		}
+		
+		setAge(newAge: number) {
+			this.age = newAge;
+		}
+		
+		getAge() {
+			return this.age;
+		}
+	}
 	
+	const user1 = new User('Dinesh', 23);
+		{
+			name: 'Dinesh',
+			age: 23
+		}
+	console.log(user1.name);
+		// Dinesh
+		
+	const user2 = new User('Akash', 24);
+	
+	user2.name // Akash
+	
+	console.log(user1.getAge()); // 23
+	console.log(user2.getAge()); // 24
+	
+	
+	Object creation
+	
+	
+		with new => will create a seperate space for that object
+		
+		
+
+	class ProductData {
+		
+		products: Product[] = [//////]; 6 products
+	
+	}
+	
+	
+	
+	var p1 = new ProductData();
+	
+	print => p1.products => 6 products
+	
+	var p2 = new ProductData();
+	
+	print => p2.prducts =>  6 products
+	
+	
+	p1.products.push(/);
+	
+	print => p1.products => 7 product
+	
+	print => p2.products => 6 Products
+		
+		
+	// Wheever we use 'new' we will a get seperate memory
+	
+	state of an object
+	
+	
+	
+	ProductService
+	
+		products: Product[]; // 9 items
+		
+		addProduct(product: Product) {
+			this.products.push(product);
+			// 10 items
+		}
+		
+		getProducts(){}
+		
+		ProductComponent
+		
+			productService = new ProductService();
+			productService.getProducts();			
+			productService.addProduct({});
+	
+	
+	UsersService
+	
+		users: User[];
+		
+		getUsers()
+		
+		
+	FOr any class
+	
+		Angular have a option to maintain single state across the application
+		
+			Angular will create an object and send us whenever we request
+			
+			when application start
+			
+				UsersService  => var userObj = new UsersService();
+				
+				[] => one time => one memory
+				
+					ProductComponent
+						userObj.getProducts(); // 9 products
+						userObj.addProduct(product) // 10 Products
+					
+					ProductDetailComponent
+						userObj.getProducts() => 10 Products
+					
+				=> Singleton Objects => only one state across application
+				
+			
+			
+		How to create singleton objects in angular
+		
+			1. Annotate the class with @Injectable({
+										  providedIn: 'root'
+										})
+			
+			
+			2. Request in components consturctor
+			
+		Singleton Objects or Service Objects 
+			
+			
+				
+			
 	
 			
 			

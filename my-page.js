@@ -7,6 +7,9 @@ console.log(1 + 1);
 var myVar1 = "Text";
 myVar1 = "another text";
 console.log(myVar1);
+console.log(myVar1.toUpperCase());
+console.log(myVar1.toLowerCase());
+console.log(myVar1);
 myVar1 = 10;
 console.log(myVar1);
 myVar1 = true;
@@ -15,7 +18,76 @@ myVar1 = {
     age: 23
 };
 
+var myStrNum = "10";
+
+var mynumber = 10;
+console.log(myStrNum);
+console.log(parseInt(myStrNum));
+console.log(+myStrNum);
+
+var input1Value = "Test"; // test
+var input2Value = "test";
+
+console.log(input1Value == input2Value);
+
+    // Test == test => false
+
+    // test == test => true
+
+console.log(myStrNum == mynumber);
+// '10' == 10 => true // == will not bother about type
+
+console.log(myStrNum === mynumber);
+// '10' === 10 => false // == will not bother about type
+
 console.log(myVar1);
+
+
+var myDemoObj = {
+    name: 'Dinesh',
+    hobbies: 'cricket',
+    degree : 'B.com'
+};
+
+console.log(Object.keys(myDemoObj));
+console.log(Object.values(myDemoObj));
+// ['name', 'hobbies', 'degree']
+
+var myDemoArray = ['name', 'age', 'education'];
+
+myDemoArray.push('another');
+
+// ['name', 'age', 'education', 'another']
+
+console.log(myDemoArray.length); // 3
+
+myDemoArray.forEach(str => console.log(str));
+
+var foundStr = myDemoArray.find(str => str == 'age');
+
+
+var myDemoObjArr = [
+    {
+        name: 'Dinesh',
+        age: 23
+    }, {
+        name: 'Akash',
+        age: 23
+    },
+    {
+        name: 'Magesh',
+        age: 28
+    }
+];
+
+var foundedObj = myDemoObjArr.find(obj => obj.name == 'Akash');
+console.log(foundedObj);
+
+
+var arr = myDemoObjArr.filter(obj => obj.age < 25);
+console.log(arr);
+
+
 
 function executeMyLines() {
     var name = "Akash";
@@ -60,7 +132,7 @@ function executeMyLines() {
 
 
 
-executeMyLines(); // Function calling 
+// executeMyLines(); // Function calling 
 
 // var num1; // memory created
 
@@ -140,7 +212,7 @@ var students = [
         }
     }
 
-console.log(students[1].name);
+// console.log(students[1].name);
 console.log(students.length);
 
 

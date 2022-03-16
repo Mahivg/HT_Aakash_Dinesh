@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { RouterModule, Routes } from '@angular/router';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 const routes: Routes = [
@@ -19,8 +20,16 @@ const routes: Routes = [
     component: ProductsComponent
   },
   {
-    path: 'product-detail',
+    path: 'products/:prodId', // 'product/983u93u32'
     component: ProductDetailComponent
+  },
+  {
+    path: '', // Default Route
+    component: LoginComponent
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent
   }
 ];
 @NgModule({

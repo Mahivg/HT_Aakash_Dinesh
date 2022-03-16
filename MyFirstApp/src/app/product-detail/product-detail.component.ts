@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ProductService } from '../services/products.service';
 
 @Component({
@@ -10,7 +11,7 @@ export class ProductDetailComponent implements OnInit {
 
   // productService: ProductService = new ProductService();
 
-  constructor(public productService: ProductService) { } // As Request
+  constructor(public productService: ProductService, private router: Router) { } // As Request
 
   ngOnInit(): void {
   }
@@ -18,6 +19,13 @@ export class ProductDetailComponent implements OnInit {
   printProducts() {
     const products = this.productService.getProducts();
     console.log(products);
+  }
+
+  goBackTOProducts() {
+    console.log('GO back to Products..');
+    // Logic
+    // Programatically Navigate
+    this.router.navigateByUrl('/products');
   }
 
 }

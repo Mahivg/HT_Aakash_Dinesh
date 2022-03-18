@@ -2027,15 +2027,108 @@ Component Communication:
 			
 		
 		
+	9 products in Products Component
+	
+		[{
+		
+		 id, name, imageUrl }]
+		 
+		Product detail component
+		
+		{}
+		
+		routes: 
+		
+		{
+		 path: 'products/p001',
+		 component: ProductDetailCOmponent
+		 }
+		 
+		 9 products => id : p001 => Product => Detail
 		
 		
 		
 		
+		products/:prodId
 		
+		ProductDetailComponent
+		
+			{ prodId : 'p001' }
+
+
+
+
+	ProductsService
+	
+		products: Product[] = [9 product];
+		
+		getProducts(), getProductById(id), addProduct(newProduct)
+		
+		
+	ProductsComponent
+	
+		prods: Product[];
+		
+		constructor(productService: ProductService)
+		
+		prods = productService.getProducts()
+		
+		*ngFOr => UI display
+		
+			9 products will be displayed
+			
+				when user clicks on one Product
 				
+					selectProduct(prod)
+					
+						url chnage => Router change => '/products/' + prod.id ;
+						
+	
+	Product Detail component
+	
+		selectedProduct: PRoduct;
+		
+		constructor(route: ActivatedRoute, productService: ProductService)
+		
+		ngOnInit() {
+			this.route.params.subscribe(data => {
+				data => { prodId : 'p001' }
+				var productId = data.prodId;
+				this.selectedProduct = this.productService.getProductById(productId);
+			});
+		}
 				
 						
-				
+	Component lifecycles method
+	
+		it will be called by angular 
+		
+		7 lifecycles
+		
+		
+		ngOnChanges
+		
+		ngOnInit => OnInit
+		
+			after constructor
+			
+			Start of the component
+		
+		ngOnDoCheck
+		
+		ngAfterContentChecked
+		
+		ngAfterContentInit
+		
+		ngAfterViewChecked
+		
+		ngAfterViewInit
+		
+		ngOnDestroy => OnDestroy
+		
+			when component leaves from Users sight
+		
+		
 							
 							
 			

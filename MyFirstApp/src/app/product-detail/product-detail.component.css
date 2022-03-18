@@ -1,0 +1,9 @@
+.my-product-detail {
+  display: flex;
+  justify-content: space-around;
+}
+
+.my-product-detail-img {
+  height: 550px;
+  width: 550px;
+}

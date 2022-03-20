@@ -17,13 +17,22 @@
       srcset=""
       class="my-product-detail-img"
     />
-    <div>
+    <div class="ms-3">
       <h2>{{ selectedProduct.name }}</h2>
       <p>
         {{ selectedProduct.shortDescription }}
       </p>
       <p>Product Specifications</p>
       <p>{{ selectedProduct.longDescription }}</p>
+      <div class="mt-3">
+        <button
+          class="btn btn-warning"
+          type="button"
+          (click)="addToCart(selectedProduct)"
+        >
+          Add to Cart
+        </button>
+      </div>
     </div>
   </div>
 </div>

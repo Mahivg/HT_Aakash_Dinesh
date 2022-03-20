@@ -1,4 +1,5 @@
 import { Injectable } from "@angular/core";
+import { BehaviorSubject } from "rxjs";
 import { Product } from "../models/product";
 
 @Injectable({
@@ -52,6 +53,9 @@ export class ProductService {
     voluptate. Amet consectetur laborum fugit sint obcaecati architecto
     consequatur praesentium blanditiis.`, ['https://www.mylloyd.com/media/products/zoom1-min.jpg'], true),
   ];
+
+  mySubject = new BehaviorSubject<string>(""); // Transmitter, Emitter, Publisher
+  mySubjectReceiver = this.mySubject.asObservable(); // Receiver
 
   getProducts() {
     return this.products;

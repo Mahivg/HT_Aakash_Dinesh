@@ -23,8 +23,11 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="products">Products</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="product-detail">Detail</a>
+        <li>
+          <a class="nav-link">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            {{ "Cart (" + cartItems.length + ")" }}
+          </a>
         </li>
       </ul>
     </div>

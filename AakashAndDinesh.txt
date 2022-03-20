@@ -2130,19 +2130,71 @@ Component Communication:
 		
 		
 							
-							
+	
+		Unrelated Component 
+		
+			How to communicate between themself
+			
+			Navbar
+				links
+				
+				
+			Proudcts
+			
+			ProductDetail
+			
+
+
+		Subject => RXjs Subject
+		
+			Product Service
+			
+				productService
+				 mySubject = new BehaviourSubject<Product>(); => Transmitter, Publisher, Emitter
+				 mySubjectReceiver = mySubject.asObservable(); => Receiver
+				
+				
+			Publish and subscribe
 			
 			
+				Source => ProductDetail => emit data => "test"
+							constructor(private productService : ProductService){}
+								productService.mySubject.next({});
+				
+				Destination => Navbar => Receives Data => "test"
+				
+						constructor(private productService : ProductService){}
+			
+							productService.mySubjectReceiver.subscribe(data => {
+								console.log(data);
+							});
+			
 								
 								
 								
 								
+		
+			<input id="txtUserName" >
+								
+			<input id="txtPassword" />
+
+
+			Javascript
+			
+				var username = document.getElementById('txtUserName').value;
+				
+				var password = document.getElementById('txtPassword').value;
+				
+				
 								
 								
-								
-								
-								
-					
+			Forms 
+			
+				Input
+				
+				
+			Angular
+				
 			
 				
 				

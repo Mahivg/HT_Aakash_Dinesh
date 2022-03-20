@@ -39,4 +39,10 @@ export class ProductDetailComponent implements OnInit {
     this.router.navigateByUrl('/products');
   }
 
+  addToCart(product: Product) {
+    // Emitting Data to Navbar
+    console.log("Sending Data to Navbar : " + product.id);
+    this.productService.mySubject.next(product.id);
+  }
+
 }

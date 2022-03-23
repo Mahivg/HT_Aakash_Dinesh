@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ProductService } from "../services/products.service";
+import { UserService } from "../services/users.service";
 
 @Component({
   selector: 'da-navbar',
@@ -10,7 +11,9 @@ export class NavbarComponent implements OnInit {
 
   cartItems: string[] = [];
 
-  constructor(private productService: ProductService) {}
+  userLoggedIn: boolean = false;
+
+  constructor(private productService: ProductService, private userService: UserService) {}
 
   ngOnInit(): void {
     this.productService.mySubjectReceiver.subscribe(data => {
@@ -20,6 +23,10 @@ export class NavbarComponent implements OnInit {
         this.cartItems.push(data);
         console.log(this.cartItems);
       }
+    });
+
+    this.userService.myLoginSubject$.subscribe(data => {
+      this.userLoggedIn = data;
     });
   }
 }

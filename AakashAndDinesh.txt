@@ -2188,20 +2188,157 @@ Component Communication:
 				
 								
 								
-			Forms 
+		Forms
+
+			1. App module
 			
-				Input
-				
-				
-			Angular
-				
+				imports: [ FormsModule, ReactiveFormsModule ]
 			
+			
+			2. Two types of forms
+
+				Template Driven forms => Form will be created in HTML , it will be passed to TS
+
+						If your inputs are 2 or 4
 				
-				
-				
+				Reactive Forms => Form will be created in TS and then used in HTML.				
 					
+					FOr large and complex forms we have to use
+			
+			
+		
+		<form>
+			
+			<input />
+		
+		</form>
+				
+		
+
+			Template Driven Form
+			
+				1. Create form
+				
+						#loginF='ngForm'
+						
+				2. Registring input
+					
+					<input name="sometext" ngModel />
+					
+				3. Submit
+				
+						<button type='submit'>
+						
+				4. Submit the form
+					
+						<form (ngSubmit)="login()" >
+				
+				
+			
+		Reactive Form
+		
+			1. Create a form group
+				
+				loginFG: FormGroup
+				
+			2. Create controls
+			
+				ngOnInit
+				
+					loginFG = new FormGroup({
+						userName: new FormControl(),
+						password: new FormControl()
+					});
+				
+			3. Register or bind ur form and form control
+			
+				-> <form [formGroup]="loginFG">
+				
+					<input formControlName="userName"
+					
+			4. this.loginFG.value
+				{
+					userName: '',
+					password : ''
+				}
+		
+		
+		
+	Recap:
+	
+		login -> products 
+		
+					-> detail  (adding product to cart)
+					
+					-> cart 
+					
+						-> Payment redirect
+					
+					
+	Component Creation
+	
+		commands
+			ng generate component componet
+			
+				selector: "da-products"
+	
+		Login, ProductListComponet, Product detail component, Cart component
+		
+	Routing
+	
+		based on url, render the component
+		
+		Default -> Login				
+						-> Products
+		
+	Data Configuration
+	
+		Service Class
+		
+			Data and function
+				users
+					
+				products
+				
+	Component communication
+	
+		parent- child]
+			@Input
+			
+		Service and Subject
+		
+	Forms
+	
+		Get data from user
+	
+	
+	
+	
+	API -> Application Interface
+	
+		application
+		
+			we have to write API's
+			
+			Node			
+	
+	
+	
+	Database => download
+		MySql
+		SQL server		
+		Amazon aurora
+		MongoDB
+			users: [/,/,/]
+		
+		
+	
+	
+	
+	
 	
 		
+	
 	
 					
 		

@@ -2332,12 +2332,239 @@ Component Communication:
 			users: [/,/,/]
 		
 		
-	
-	
-	
-	
-	
 		
+	
+	Server	
+	
+		url => content 
+		
+		localhost:4400/product =>  html files => angular serving
+		
+			ng serve --port=4400
+		
+		localhost:2322/dsfsdfds => { products: [] }
+	
+	
+	
+	database => API => localhost:32223/products => []
+	
+	
+	https://jsonplaceholder.typicode.com/posts => [{}]
+	
+	
+	Database
+	
+		Application
+		
+			will take some System memory
+			
+			Two types
+			
+				1. Relational Database or SQL database				
+				
+				2. Non relational Database or NoSql database
+				
+				
+	
+		Relational Database
+			
+			MySql
+			SQL server
+			Postgres 
+			AmazonDB
+		
+		
+			Mysql => Install => localhost:3306 => Mysql
+			
+				user: root, Test@12345
+			
+			Tables => relational
+			
+			User
+			
+				Cart 
+				
+					Product
+					
+			user table
+			
+				1 u001 name email password  c001
+			
+			cart table
+			
+				1  c001 p001
+				2  c001 p002
+			
+			product table
+			
+			1  p001 product1 description  imageurls
+			
+			2  p002 product2 descrtop2 		imageurl
+			
+			
+		query data
+		
+			select * from product
+			
+			insert into product values ('p003', '');
+			
+			
+		ORM tools
+		
+			Object relational Management
+			
+			
+				Product => By binding one of the table (Product Table)
+				
+				Product.insertOne(product);
+			
+			
+			API
+			
+				java => Hibernate
+				node => Sequelize
+				
+			
+		NoSql
+			MongoDB
+			
+			
+				data will be stored as JSON
+		
+				 {
+				 
+					user: {
+						id: 'userId'
+						name: '',
+						age: '',
+						
+						cart: {
+							cartId: '',
+							products: [
+								{
+								
+									prodId : 'p001',
+									name: 'pName"
+							]
+						}
+					
+					}
+	
+		Collections
+		
+			users => collection
+			
+				document => 
+	
+	
+	
+	
+		Data base setup is done -> clound mongo db
+	
+	
+	
+		API Application with node
+		
+			reason for this application
+			
+			
+				Data API
+				
+					localhost:4400 => UI application => angular serve
+					
+					
+					localhost:3000/products => json data,  []
+	
+	
+				node -v
+				
+				npm -v
+	
+			
+			
+				npm install -g typescript
+				
+				npm install -g @angualr/cli
+				
+				
+					-g => global
+					
+					
+					Users/APpData/Roaming
+					
+					
+					
+			Node Modules
+			
+			
+				Global Level
+				
+					npm install -g 'library'
+				
+					http, fs, path
+					
+				Local / Folder level
+					Node_modules
+						http
+					app, src 
+						http.js
+					
+					npm install 'library'
+					
+				library not found
+					
+				
+				
+			require
+			
+				const path = require('path');
+				
+				
+			TO Create a server:
+			
+				const myhttp = require('http');
+					
+				const server = myhttp.createServer((req, res) => {
+				
+				});
+				
+				server.listen(4200);
+				
+				localhost:4200
+	
+	
+		HTTP 
+			4 Method
+			
+			
+			GET, POST, PUT and DELETE
+			
+			
+			localhost:4000/products with GET type
+			
+				server will send a response
+			
+			localhost:4000/products with POST type
+				
+				UI application will post a data
+				server will add it to their Data
+	
+	
+		Node has library
+		
+			expressjs =>
+			
+			npm install expressn
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 					

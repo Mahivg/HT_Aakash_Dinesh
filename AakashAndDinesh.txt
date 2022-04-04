@@ -2650,7 +2650,7 @@ Component Communication:
 			
 			HTTP module
 			
-				localhost:4000/prodcuts
+				localhost:4000/products
 	
 	
 		Pure JS
@@ -2660,13 +2660,46 @@ Component Communication:
 	localhost:4000/product
 	
 		[]
+		
+		
+		
+		
+	Angualr UI
+								API(Node and Express)							Mongo DB (Products)
+	
+	post man     
 	
 	
 	
 	
 	
 	
-					
+	
+	
+	Angular app in 4200
+	
+	API app in 4000 => localhost:4000/products(GET), localhost:4000/products(POST)
+	
+		
+
+	Angular one module
+	
+		HTTPClientModule
+		
+		import : [HTTPClientModule]
+		
+		
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 			
 			

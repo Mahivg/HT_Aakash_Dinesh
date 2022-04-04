@@ -1,7 +1,12 @@
 // const http = require('http');
 const myExpress = require('express');
 const bodyParser = require('body-parser');
+const mongooseLib = require('mongoose');
+const cors = require('cors');
+
 const myAppRouters = require('./app-router');
+
+const DB_CONNECTION_URL = 'mongodb+srv://magesh:Test123456@magesh01.m5trt.mongodb.net/shop';
 
 const app = myExpress();
 
@@ -9,11 +14,21 @@ app.use(bodyParser.urlencoded({extended : true}));
 
 app.use(myExpress.json());
 
+app.use(cors());
+
 app.use(myAppRouters);
 
-app.listen(4000, () => {
-    console.log('Server Started at 4000..');
-});
+mongooseLib.connect(DB_CONNECTION_URL)
+            .then(client => {
+                console.log(" Connected to Mongo DB");
+                // console.log(client);
+                app.listen(4000, () => {
+                    console.log('Server Started at 4000..');
+                });
+            })
+            .catch(err => console.log(err));
+
+
 
 
 // const server = http.createServer((req, res) => {

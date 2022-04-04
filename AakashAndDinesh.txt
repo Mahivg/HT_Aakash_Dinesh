@@ -2554,13 +2554,112 @@ Component Communication:
 		
 			expressjs =>
 			
-			npm install expressn
+			npm install express
+			
+			Node_modules
+			
+				express
+				
+		
+			app.js
+			
+				const express = require('express');
+				
+				var app = express();
+				
+				
+				app.get('/products', (req, res) => {
+				
+				})
+				
+			Moving the routes in seperate file
+			
+				app.routes.js
+				
+				
+			For Mongo DB
+			
+			
+				library name => Mongoose
+				
+				
+				
+				const mongooseLib = require('mongoose')
+				
+				mongooseLib.connect('connection URL')
+							.then(ce => {})
+							.catch(err => {});
+							
+							
+			What type of data need to be stored
+			
+			
+				{
+					'_id' : 'anskdnaskdknsaknsa-sadasdsad',
+				
+					'name' : string,
+					
+					'description' : string
+				}
+				
+			Mongo Schema
+			
+			productShema
+				{
+					'_id' : 'anskdnaskdknsaknsa-sadasdsad',
+				
+					'name' : string,
+					
+					'description' : string
+				}
+				
+			mongooseLib.model('product', productShema)
+				
+			
+		 shop
+		 
+			products
+				{}
+		 
+			
+				
+		app.js
+			const Product = require('./file');
+			
+			Product.find()	
+			
+			var newMyProd = new Prodcut({ name: , desctiop}_);
+			
+			newMyProd.save();
+			
+			Product.findById(id)
+			
+			Product.findByIDAndUpdate()
+	
+		
 	
 	
 	
 	
 	
+	localhost:4300
 	
+		Angualr app
+			
+			we have to call 
+			
+			HTTP module
+			
+				localhost:4000/prodcuts
+	
+	
+		Pure JS
+			fetch('urL)
+	
+	
+	localhost:4000/product
+	
+		[]
 	
 	
 	

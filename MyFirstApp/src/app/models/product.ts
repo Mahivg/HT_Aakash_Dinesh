@@ -1,6 +1,6 @@
 export class Product {
 
-  id: string;
+  _id: string;
 
   name: string;
 
@@ -13,7 +13,7 @@ export class Product {
   active: boolean;
 
   constructor(pId: string, pName: string, pShortDesc: string, pLognDesc: string, pImageUrls: string[], pActive: boolean) {
-    this.id = pId;
+    this._id = pId;
     this.name = pName;
     this.shortDescription = pShortDesc;
     this.longDescription = pLognDesc;

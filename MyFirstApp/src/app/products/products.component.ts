@@ -16,7 +16,9 @@ export class ProductsComponent implements OnInit {
   constructor(public productService: ProductService, private router: Router) { } // Request fo an object
 
   ngOnInit(): void {
-    this.prods = this.productService.getProducts();
+    this.productService.getProducts().subscribe(data => {
+      this.prods = data;
+    })
   }
 
   // We need to intimate Angular that it is going to receive data from parent
@@ -36,7 +38,7 @@ export class ProductsComponent implements OnInit {
 
   selectProduct(prod: Product) {
 
-    this.router.navigateByUrl('/products/' + prod.id); // /products/p001
+    this.router.navigateByUrl('/products/' + prod._id); // /products/p001
 
   }
 

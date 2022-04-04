@@ -22,7 +22,9 @@ export class ProductDetailComponent implements OnInit {
     this.route.params.subscribe(data => {
       console.log(data);
       var prodId = data.prodId;
-      this.selectedProduct = this.productService.getProductById(prodId);
+      this.productService.getProductById(prodId).subscribe(data => {
+        this.selectedProduct = data;
+      });
     })
 
   }
@@ -41,8 +43,8 @@ export class ProductDetailComponent implements OnInit {
 
   addToCart(product: Product) {
     // Emitting Data to Navbar
-    console.log("Sending Data to Navbar : " + product.id);
-    this.productService.mySubject.next(product.id);
+    console.log("Sending Data to Navbar : " + product._id);
+    this.productService.mySubject.next(product._id);
   }
 
 }
